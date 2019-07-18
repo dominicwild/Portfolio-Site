@@ -20,7 +20,7 @@ if((isset($project["github"]) + isset($project["liveDeployment"]) == 1)){
 <div class="col-sm-12 col-md-6 col-lg-4 px-1">
     <div class="card shadow rounded-0 border-0 p-0 m-1">
         <div class="card-img-top">
-            <img class="w-100 thumbnail" src="<?= $project["image"] ?>">
+            <img class="thumbnail" src="<?= $project["image"] ?>">
             <div class="language-set">
                 <?php foreach ($project["languages"] as $language): ?>
                 <span title="<?= $language["title"] . " Icon" ?>">

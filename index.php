@@ -33,6 +33,10 @@ require_once "php/dynamic-content.php"
 
 <body>
 
+<div class="dim-overlay">
+
+</div>
+
 <div class="background-texture">
 
 </div>

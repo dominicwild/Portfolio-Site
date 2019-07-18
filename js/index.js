@@ -75,20 +75,12 @@ function initialProjectInit() {
 }
 
 function updateInProjectBody(event) {
-    if (event.type === "mouseover") {
-        inProjectBody = true;
-    } else {
-        inProjectBody = false;
-    }
+    inProjectBody = event.type === "mouseover";
     updateArrowStatus(event);
 }
 
 function updateInProjectFooter(event) {
-    if (event.type === "mouseover") {
-        inProjectFooter = true;
-    } else {
-        inProjectFooter = false;
-    }
+    inProjectFooter = event.type === "mouseover";
     updateArrowStatus(event);
 }
 
@@ -125,7 +117,31 @@ function arrowSanityCheck() {
     setTimeout(arrowSanityCheck, 2000);
 }
 
+function activateOverlay(){
+    $(".dim-overlay").addClass("active");
+}
+
+function deactivateOverlay(event = null){
+    $(".dim-overlay").removeClass("active");
+    var fullImages = $(".full-view");
+    var cards = $(fullImages).closest(".card");
+    $(fullImages).removeClass("full-view");
+    $(cards).find(".language-set").css("display","");
+}
+
+function popThumbnail(event){
+    var thumbnail = $(event.target).find(".thumbnail");
+    var card = $(thumbnail).closest(".card");
+    $(thumbnail).addClass("full-view");
+    $(card).find(".language-set").css("display","none");
+    activateOverlay();
+    $(event.target).attr("data-full-view",true);
+}
+
 $(function () {
+
+    var projectBodies = $(".projects .card .card-body");
+    var projectFooters = $(".projects .card .card-footer");
 
     //Inject svg with svg image code for CSS manipulation
     var injectSVG = document.querySelectorAll('img.svg'); //All SVG's must have SVG class
@@ -134,12 +150,15 @@ $(function () {
     setTimeout(initialProjectInit, 10);
     setTimeout(arrowSanityCheck, 2000);
 
-    $(".projects .card .card-body").on("mouseover", updateInProjectBody);
-    $(".projects .card .card-body").on("mouseleave", updateInProjectBody);
-    $(".projects .card .card-footer").on("mouseover", updateInProjectBody);
-    $(".projects .card .card-footer").on("mouseleave", updateInProjectBody);
+    $(projectBodies).on("mouseover", updateInProjectBody);
+    $(projectBodies).on("mouseleave", updateInProjectBody);
+    $(projectFooters).on("mouseover", updateInProjectBody);
+    $(projectFooters).on("mouseleave", updateInProjectBody);
 
     $(".projects .card .buttons button").on("click", projectButtonClick);
+    $(".projects .card .card-img-top").on("click", popThumbnail);
+    $(".dim-overlay").on("click",deactivateOverlay);
+
 
     $(window).on("resize", onResize);
 });
