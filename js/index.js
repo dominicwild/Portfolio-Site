@@ -125,14 +125,14 @@ function deactivateOverlay(event = null){
     $(".dim-overlay").removeClass("active");
     var fullImages = $(".full-view");
     var cards = $(fullImages).closest(".card");
-    $(fullImages).removeClass("full-view");
+    $(fullImages).removeClass("full-view").addClass("zoom-down-animation");
     $(cards).find(".language-set").css("display","");
 }
 
 function popThumbnail(event){
     var thumbnail = $(event.target).find(".thumbnail");
     var card = $(thumbnail).closest(".card");
-    $(thumbnail).addClass("full-view");
+    $(thumbnail).addClass("full-view").removeClass("zoom-down-animation");
     $(card).find(".language-set").css("display","none");
     activateOverlay();
     $(event.target).attr("data-full-view",true);

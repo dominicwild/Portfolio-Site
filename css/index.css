@@ -381,9 +381,31 @@ body {
     }
 }
 
-@keyframes zoom-down {
-    100% {
+@keyframes reverse-image-pop {
+   0% {
+       width: 80vw;
+       height: 80vh;
+       z-index: 100;
+       position: fixed;
+       top: 0;
+       left: 0;
+       object-fit: contain;
+       margin: 10vh 10vw;
+   }
+
+    50% {
         transform: translateY(calc(100vh));
     }
+
+    100% {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+.zoom-down-animation {
+    animation-name: reverse-image-pop;
+    animation-duration: 0.75s;
 }
 
