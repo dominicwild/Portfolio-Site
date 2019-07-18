@@ -215,9 +215,9 @@ body {
 }
 
 .projects .language-set {
-    position: relative;
+    position: absolute;
     width: 100%;
-    top: -32px;
+    bottom: 32px;
     /*Removes from the flow of the page, float can be anything*/
     float: right;
     height: 0;

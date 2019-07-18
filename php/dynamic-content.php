@@ -9,82 +9,97 @@
 $languages = [
     "bootstrap" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrap.svg",
+        "icon_project" => "portfolioImages/icons/bootstrap/bootstrap-plain.svg",
         "description" => "Creating a social network site and this portfolio!",
         "title" => "Bootstrap",
     ],
     "html5" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg",
+        "icon_project" => "portfolioImages/icons/html5/html5-original-wordmark.svg",
         "description" => "",
         "title" => "HTML5",
         "color" => "#e44d26",
     ],
     "css3" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg",
+        "icon_project" => "portfolioImages/icons/css3/css3-original-wordmark.svg",
         "description" => "",
         "title" => "CSS3",
         "color" => "#1b73ba",
     ],
     "cakephp" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cakephp.svg",
+        "icon_project" => "portfolioImages/icons/cakephp/cakephp-original-wordmark.svg",
         "description" => "Used in making a social network site.",
         "title" => "CakePHP Framework",
         "color" => "#d33c45",
     ],
     "php" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/php.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "",
         "title" => "PHP",
         "color" => "#4d598f",
     ],
     "javascript" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "",
         "title" => "JavaScript",
         "color" => "#f7e018",
     ],
     "java" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "Made distributed auction system, JFSML game etc. (4 years)",
         "title" => "Java",
         "color" => "#007396",
     ],
     "python" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "Machine learning: Data processing (PCM), k means (fuzzy) etc. ",
         "title" => "Python",
     ],
     "c++" => [
         "icon" => "/portfolioImages/icons/cplusplus/cplusplus-plain.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "Micro:bit Mesh network protocol and minor projects",
         "title" => "C++",
     ],
     "c" => [
         "icon" => "/portfolioImages/icons/c/c-plain.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "",
         "title" => "C",
     ],
     "c#" => [
         "icon" => "/portfolioImages/icons/csharp/csharp-plain.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "Unity Augmented Reality App using Vuforia",
         "title" => "C#",
     ],
     "R" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/r.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "Used for statistical analysis and plots",
         "title" => "R",
     ],
     "matlab" => [
         "icon" => "portfolioImages/matlab.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "Used for statistical analysis, plots, media coding and processing",
         "title" => "R",
     ],
     "mysql" => [
         "icon" => "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg",
+        "icon_project" => "portfolioImages/icons/php/php-original.svg",
         "description" => "",
         "title" => "MySQL",
     ],
     "aws" => [
         "icon" => "/portfolioImages/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+        "icon_project" => "portfolioImages/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
         "description" => "",
         "title" => "Amazon Web Services",
     ],
@@ -212,13 +227,39 @@ $projects = [
             $languages["c++"], $languages["c"],
         ],
     ],
-    "Social Network5" => [
-        "name" => "Social Network",
-        "description" => "Lorem iset turpis viverra, efeugiat. Vivamus quis nulla sagittis justo dictum rutrum ac eget urna. Phasellus ut lectus id massa laoreet fringilla. Pellentesque lobortis enim non aliquet lacinia. Morbi mattis felis sit amet bibendum imperdiet. Quisque dictum, dolor ultricies lobortis eleifend, velit mi venenatis urna, quis facilisis sem justo ut sapien. Sed eget elementum leo. Fusce sit amet augue elit. Nulla eget ullamcorper nisi.",
-        "start_date" => strtotime("February 2015"),
-        "image" => "portfolioImages/gifs/social.gif",
+    "Krooza" => [
+        "name" => "Krooza: 2D Twin Stick Shooter",
+        "description" => "A game developed through the Java's JSFML library. This game was developed alongside some friends of mine. Art was made by a friend and majority of the coding was done by me.
+        
+        <p>
+        The experience taught me a lot about the importance and effectiveness of object orientated design. Before development I made a UML diagram to plan out the object design, with inheritance and along with how the code would flow, what particular classes and objects should generally do, how the engine would work, any extra challenges we may face.
+        </p>
+        
+        <p>
+        The parts of the game I coded were: 
+        <ul>
+        <li>The Game Engine</li>
+        <li>4 Coordinated Enemy AI Types</li>
+        <li>Car Modification System (swap different tyres, weapons (primary and secondary weapons), armour, car skins)</li>
+        <li>Physics Engine</li>
+        <li>Rendering Engine</li>
+        <li>The Game's HUD</li>
+        <li>Two Game Modes (Hoard and Survival Mode)</li>
+        </ul>
+        </p>
+        
+        <p>
+        Working within a group also meant it was important to keep code well documented and commented. I therefore kept all code commented and up to date. I scheduled regular communication and meetings to ensure we were making steady progress, catching problems early.
+        </p>
+        <p>
+        The result was a game with a refined twin stick combat system. The game does however lack content to consider it a full fledged game, however the baseline exists for this game to be developed into something official.
+        </p>
+        ",
+        "github" => "https://github.com/dominicwild/Krooza",
+        "start_date" => strtotime("October 2016"),
+        "image" => "portfolioImages/gifs/krooza.gif",
         "languages" => [
-            $languages["cakephp"], $languages["php"], $languages["bootstrap"], $languages["css3"], $languages["html5"]
+            $languages["java"],
         ],
     ],
 ];
