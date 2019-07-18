@@ -215,25 +215,7 @@ $projects = [
     "Social Network5" => [
         "name" => "Social Network",
         "description" => "Lorem iset turpis viverra, efeugiat. Vivamus quis nulla sagittis justo dictum rutrum ac eget urna. Phasellus ut lectus id massa laoreet fringilla. Pellentesque lobortis enim non aliquet lacinia. Morbi mattis felis sit amet bibendum imperdiet. Quisque dictum, dolor ultricies lobortis eleifend, velit mi venenatis urna, quis facilisis sem justo ut sapien. Sed eget elementum leo. Fusce sit amet augue elit. Nulla eget ullamcorper nisi.",
-        "start_date" => strtotime("February 2019"),
-        "image" => "portfolioImages/gifs/social.gif",
-        "languages" => [
-            $languages["cakephp"], $languages["php"], $languages["bootstrap"], $languages["css3"], $languages["html5"]
-        ],
-    ],
-    "Social Network6" => [
-        "name" => "Social Network",
-        "description" => "Lorem iset turpis viverra, efeugiat. Vivamus quis nulla sagittis justo dictum rutrum ac eget urna. Phasellus ut lectus id massa laoreet fringilla. Pellentesque lobortis enim non aliquet lacinia. Morbi mattis felis sit amet bibendum imperdiet. Quisque dictum, dolor ultricies lobortis eleifend, velit mi venenatis urna, quis facilisis sem justo ut sapien. Sed eget elementum leo. Fusce sit amet augue elit. Nulla eget ullamcorper nisi.",
-        "start_date" => strtotime("January 2019"),
-        "project_image" => "portfolioImages/gifs/social.gif",
-        "languages" => [
-            $languages["cakephp"], $languages["php"], $languages["bootstrap"], $languages["css3"], $languages["html5"]
-        ],
-    ],
-    "Social Network7" => [
-        "name" => "Social Network",
-        "description" => "Lorem iset turpis viverra, efeugiat. Vivamus quis nulla sagittis justo dictum rutrum ac eget urna. Phasellus ut lectus id massa laoreet fringilla. Pellentesque lobortis enim non aliquet lacinia. Morbi mattis felis sit amet bibendum imperdiet. Quisque dictum, dolor ultricies lobortis eleifend, velit mi venenatis urna, quis facilisis sem justo ut sapien. Sed eget elementum leo. Fusce sit amet augue elit. Nulla eget ullamcorper nisi.",
-        "start_date" => strtotime("January 2019"),
+        "start_date" => strtotime("February 2015"),
         "image" => "portfolioImages/gifs/social.gif",
         "languages" => [
             $languages["cakephp"], $languages["php"], $languages["bootstrap"], $languages["css3"], $languages["html5"]

@@ -110,7 +110,6 @@ function arrowSanityCheck() {
 
         if (!(isDownCorrect || isUpCorrect)) { //If incorrect arrow position
             rotate(arrow, 180);
-            console.log("flip");
         }
 
     });
@@ -127,6 +126,7 @@ function deactivateOverlay(event = null){
     var cards = $(fullImages).closest(".card");
     $(fullImages).removeClass("full-view").addClass("zoom-down-animation");
     $(cards).find(".language-set").css("display","");
+    // setTimeout(function(){$(cards).find(".language-set").css("display","");},500);
 }
 
 function popThumbnail(event){
