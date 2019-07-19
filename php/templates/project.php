@@ -23,8 +23,9 @@ if((isset($project["github"]) + isset($project["liveDeployment"]) == 1)){
             <img class="thumbnail" src="<?= $project["image"] ?>">
             <div class="language-set">
                 <?php foreach ($project["languages"] as $language): ?>
+                <?php $icon = isset($language["icon_project"]) ? $language["icon_project"] : $language["icon"]; ?>
                 <span title="<?= $language["title"] . " Icon" ?>">
-                    <img class="svg language language-padding" src="<?= $language["icon"] ?>">
+                    <img class="svg language language-padding" src="<?= $icon ?>">
                 </span>
                 <?php endforeach; ?>
             </div>

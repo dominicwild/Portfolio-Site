@@ -2,6 +2,20 @@ var projectMaxHeight = 350;
 var inProjectFooter = false;
 var inProjectBody = false;
 
+var resizeThrottled = false;
+
+function resizeVhUpdate(event){
+    if(!resizeThrottled) {
+        setTimeout(() => {
+            var vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            resizeThrottled = false;
+        });
+    }
+}
+
+$(window).on("resize",resizeVhUpdate);
+
 function initProjects(int, project) {
 
     var body = $(project).find(".card-body");
@@ -138,7 +152,33 @@ function popThumbnail(event){
     $(event.target).attr("data-full-view",true);
 }
 
+function fadeIn(entries, observer){
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+
+            if($(entry.target).hasClass("projects")){
+                $(entry.target).addClass("speed-in-animation");
+            } else {
+                $(entry.target).addClass("active");
+            }
+
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+function prepareAnimations(){
+    var projectObserver = new IntersectionObserver(fadeIn, {rootMargin : "0px 0px -15% 0px"});
+    projectObserver.observe($(".projects-info")[0]);
+    projectObserver.observe($(".row.projects")[0]);
+}
+
 $(function () {
+
+
+    setTimeout(resizeVhUpdate,100);
+
+    prepareAnimations();
 
     var projectBodies = $(".projects .card .card-body");
     var projectFooters = $(".projects .card .card-footer");

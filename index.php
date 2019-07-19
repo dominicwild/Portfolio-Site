@@ -88,36 +88,38 @@ require_once "php/dynamic-content.php"
 
 <div class="container-fluid main-content text-white mt-3 px-5">
 
-    <h1>About Me</h1>
-    <p>
-        I am a Lancaster University graduate completing a 4 years masters in computer science achieving a first class
-        honours. Throughout my degree I studied many areas of computer science: Machine learning, natural language
-        processing, media coding and processing, languages and compilation, human computer interaction, web
-        applications, networking, distributed systems, software design etc.
-    </p>
-    <p>
-        My interests are rooted in solving interesting problems. I have an interest mathematics, which I took as my
-        minor in university. I would like to explore the area of data mining and machine learning at greater length due
-        to its mathematical and predictive nature.
-    </p>
-    <p>
-        A large part of my motivation in this profession is helping people, creating technological solutions which
-        enrich or make peoples lives better. This motivation spans to my free time, I have voluntarily lead the
-        moderator team of an anonymous chatroom where people seek help on their personal problems (anxiety, depression,
-        relationships etc.).
-    </p>
-
-    <h1>Projects</h1>
-    <p>
-        This portfolio website is one project I undertook. This portfolio is hosted on Amazon AWS and made mostly from
-        scratch with Bootstrap. PHP is used to template some repetitive elements for easier modification and addition of
-        new items. The main purpose of this site is to be a central hub for all my projects and important links.
-    </p>
-    <p>
-        Listed below is some of the projects I have worked on.
-    </p>
-
-    <div class="row projects">
+    <div class="about-me">
+        <h1>About Me</h1>
+        <p>
+            I am a Lancaster University graduate completing a 4 years masters in computer science achieving a first class
+            honours. Throughout my degree I studied many areas of computer science: Machine learning, natural language
+            processing, media coding and processing, languages and compilation, human computer interaction, web
+            applications, networking, distributed systems, software design etc.
+        </p>
+        <p>
+            My interests are rooted in solving interesting problems. I have an interest mathematics, which I took as my
+            minor in university. I would like to explore the area of data mining and machine learning at greater length due
+            to its mathematical and predictive nature.
+        </p>
+        <p>
+            A large part of my motivation in this profession is helping people, creating technological solutions which
+            enrich or make peoples lives better. This motivation spans to my free time, I have voluntarily lead the
+            moderator team of an anonymous chatroom where people seek help on their personal problems (anxiety, depression,
+            relationships etc.).
+        </p>
+    </div>
+    <div class="projects-info fade-in ">
+        <h1>Projects</h1>
+        <p>
+            This portfolio website is one project I undertook. This portfolio is hosted on Amazon AWS and made mostly from
+            scratch with Bootstrap. PHP is used to template some repetitive elements for easier modification and addition of
+            new items. The main purpose of this site is to be a central hub for all my projects and important links.
+        </p>
+        <p>
+            Listed below is some of the projects I have worked on. (The list isn't extensive and more projects may be added later)
+        </p>
+    </div>
+    <div class="row projects speed-in">
 
 
         <?php
