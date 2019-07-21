@@ -269,7 +269,7 @@ $projects = [
 
     "HEART" => [
         "name" => "Augmented Reality Mobile Application",
-        "description" => "This was a group project named HEART (Historical Experiences in Augmented Reality). The application was developed in Unity using a library called Vuforia which specializes in the development of AR applications. 
+        "description" => "This was a group project named HEART (Historical Experiences in Augmented Reality). The application was developed in Unity (using C#) using a library called Vuforia which specializes in the development of AR applications. 
         
         <p>
         HEART's goal was to digitally reconstruct old heritage sites and provide a innovative approach to delivering information about such a site. We developed a prototype, not having the technical expertise or resources to achieve the full product. 
@@ -289,6 +289,79 @@ $projects = [
         "image" => "portfolioImages/gifs/heart.gif",
         "languages" => [
             $languages["unity"], $languages["c#"],
+        ],
+    ],
+
+    "NLP Classifier" => [
+        "name" => "Language Classifier",
+        "description" => "A Natural Language Processing project using machine learning techniques to identify the language of a particular corpus of text. 
+        
+        <p>
+        The classifier was made completely from scratch using Java, with no external  machine learning libraries used. Cross validation, frequency analysis and variable training set size methods were used to evaluate the effectiveness of the technique implemented.   
+        </p>
+        
+        <p>
+        My language identification system works on using rank-order n-gram statistics to predict a language. The output of my system is a distance metric that determines how likely a piece of text is to be a particular target language. Implementation was based off of a <a href='http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.53.9367'>research paper</a>. 
+        </p>
+        
+        <p>
+        Building this system taught me a lot about machine learning and the processes that need to be undertaken in order to process data. It gave me experience of processing high volumes of data (300k sentences) and analysing that data to form conclusions.
+        </p>
+        
+        <p>
+        The conclusion of this project was an accurate classifier, maintaining 95% accuracy even for corpus only 20-40 words in size, needing 30,000-40,000 words to give stable predictions. This was all validated using 10 fold cross validation (tested only with English, Czech, German and Solvenian ).
+        </p>
+        
+        ",
+        "github" => "https://github.com/dominicwild/Java-Corpus-Language-Classifier",
+        "start_date" => strtotime("November 2017"),
+        "image" => "portfolioImages/nlp.png",
+        "languages" => [
+            $languages["java"],
+        ],
+    ],
+
+    "DHT System" => [
+        "name" => "Distributed Storage & Worker System with RESTful API",
+        "description" => "A system developed where simple jobs could be submitted via a web interface. Simple jobs such as encryption, text analysis and hashing were available. The results of these jobs were available to download asynchronously from the browser on completion.
+        
+        <p>
+        The distributed system was developed entirely in Java, using a Java servlet to send/receive REST API calls. Data was stored on the backend using a Distributed Hash Table (DHT), using a robust architectural topology with nodes arranged in a ring. 
+        </p>
+        
+        <p>
+        This project stressed by OO design capabilities, making nodes that could function as works, storage nodes or both, using inheritance to achieve this feature. Along with experience of developing concurrent applications, processes and implementing abstract algorithms into code.
+        </p>
+        
+        <p>
+        Conclusion of the project involved a fault tolerant system able to keep track of stored files, their status, manage node or operation failures and handle collisions.
+        </p>
+        ",
+        "github" => "https://github.com/dominicwild/Distributed-Storage-Worker-System",
+        "start_date" => strtotime("November 2018"),
+        "image" => "portfolioImages/dht.png",
+        "languages" => [
+            $languages["java"],
+        ],
+    ],
+
+    "Auction System" => [
+        "name" => "Distributed Auction System",
+        "description" => "A distributed fault tolerant auction system made with Java. Featured a dynamic replication server, authentication mechanism, encrypted data transmission, 5 step challenge response protocol. 
+        
+        <p>
+        The project made strong use of Java RMI (remote method invocation) for communication between clients and servers. There were distributed auction servers that had to keep up-to-date with the system as a whole to function correctly. JGroups was used as a group server communication protocol library to ensure atomic interactions, guarantee packet arrival, manage dead connections etc. 
+        </p>
+        
+        <p>
+        The project concluded with a robust and simple distributed auction system, giving me lots of experience in the challenges associated with design, architecture and programming distributed systems. 
+        </p>
+        ",
+        "github" => "https://github.com/dominicwild/Auction-System",
+        "start_date" => strtotime("November 2017"),
+        "image" => "portfolioImages/gifs/auction_system.gif",
+        "languages" => [
+            $languages["java"],
         ],
     ],
 ];
